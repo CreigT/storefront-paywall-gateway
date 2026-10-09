@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Members</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#e7e1d4"/><rect x="10" y="8" width="16" height="3" fill="#1c2822"/><path d="M8 28 V16 a10 10 0 0 1 20 0 V28 Z" fill="none" stroke="#1c2822" stroke-width="3"/></svg><span data-brand>Northline</span></a>
+      <nav class="nav-links">
+        <a href="pricing.html">Price</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+    <section class="section" data-wall>
+      <p class="kicker">Paid page</p>
+      <h1>This page is the thing you pay for</h1>
+      <p class="lede">The worksheets stay behind the price. The sample stays free. That is the whole wall.</p>
+      <p><a class="btn" href="pricing.html">Back to the price — <span data-price>$29</span></a></p>
+    </section>
+    <section class="section" data-members hidden>
+      <p class="ok">Paid return detected in this browser. This demo unlock is local. A live shop should confirm payment with a Stripe webhook before showing this page.</p>
+      <h1 data-product>The Operator Brief</h1>
+      <div class="card">
+        <h3>Friday review — 20 minutes</h3>
+        <ol>
+          <li>Orders this week, refunds this week, cash left.</li>
+          <li>One sentence: what customers asked for twice.</li>
+          <li>Change one line on the site, or change nothing.</li>
+          <li>Write the next week’s single offer. Stop.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Pricing floor</h3>
+        <p>Floor = cost + fees + the refund rate you actually saw. Do not sell under the floor. Target = floor × 2. Stop-loss = three weeks under the floor.</p>
+      </div>
+      <div class="card">
+        <h3>Three emails</h3>
+        <p><strong>Welcome.</strong> Here is what you bought. Here is how to get a refund.</p>
+        <p><strong>Check-in.</strong> One question: did you use the Friday sheet?</p>
+        <p><strong>Refund.</strong> Done. The money is on the way. You can keep the sample.</p>
+      </div>
+    </section>
+    <footer>
+      <span><span data-brand>Northline</span></span>
+      <span><a href="refunds.html">Refunds</a></span>
+    </footer>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

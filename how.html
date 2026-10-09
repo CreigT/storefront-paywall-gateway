@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How it works</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#e7e1d4"/><rect x="10" y="8" width="16" height="3" fill="#1c2822"/><path d="M8 28 V16 a10 10 0 0 1 20 0 V28 Z" fill="none" stroke="#1c2822" stroke-width="3"/></svg><span data-brand>Northline</span></a>
+      <nav class="nav-links">
+        <a href="pricing.html">Price</a>
+        <a href="sample.html">Free sample</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+    <section class="section">
+      <p class="kicker">Plain language</p>
+      <h1>How this shop runs</h1>
+      <p class="lede">You own it. You do not have to operate it. The public site stays this simple on purpose.</p>
+      <div class="grid-2">
+        <article class="card">
+          <h3>What you do</h3>
+          <ol>
+            <li>Edit config.js. Brand, price, email, payment link.</li>
+            <li>Push the folder to GitHub.</li>
+            <li>Import it in Vercel. It is a static site. No build command.</li>
+            <li>Read the Friday note if an agent wants to change the price.</li>
+          </ol>
+        </article>
+        <article class="card">
+          <h3>What you do not do</h3>
+          <ul>
+            <li>You do not write the weekly page.</li>
+            <li>You do not answer routine mail. Support does.</li>
+            <li>You do not approve a refund inside the published window.</li>
+            <li>You do approve a new price, a new supplier, or a legal change.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <h2>The paywall, in one picture</h2>
+      <table>
+        <thead><tr><th>Visitor does</th><th>Site does</th><th>Money moves?</th></tr></thead>
+        <tbody>
+          <tr><td>Opens the home page</td><td>Shows the product and the sample link</td><td>No</td></tr>
+          <tr><td>Reads the sample</td><td>Shows four lines. Nothing hidden behind a fake blur.</td><td>No</td></tr>
+          <tr><td>Opens the price page</td><td>Shows the number before the button</td><td>No</td></tr>
+          <tr><td>Clicks pay</td><td>Sends them to Stripe</td><td>Yes, on Stripe</td></tr>
+          <tr><td>Asks for a refund in window</td><td>Refund agent issues it</td><td>Yes, back to them</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+      <span><span data-brand>Northline</span> · <span data-owner></span></span>
+      <span><a href="privacy.html">Privacy</a> · <a href="refunds.html">Refunds</a></span>
+    </footer>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

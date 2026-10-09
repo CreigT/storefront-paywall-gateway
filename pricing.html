@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Price</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#e7e1d4"/><rect x="10" y="8" width="16" height="3" fill="#1c2822"/><path d="M8 28 V16 a10 10 0 0 1 20 0 V28 Z" fill="none" stroke="#1c2822" stroke-width="3"/></svg><span data-brand>Northline</span></a>
+      <nav class="nav-links">
+        <a href="how.html">How it works</a>
+        <a href="sample.html">Free sample</a>
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+    <section class="section">
+      <p class="kicker">The paywall</p>
+      <h1>Free to read. One price to keep.</h1>
+      <p class="lede">You can see the method on the sample page. The paid page is the worksheets and the emails.</p>
+    </section>
+    <section class="grid-2">
+      <article class="card">
+        <h3>Free</h3>
+        <p class="price">$0</p>
+        <ul>
+          <li>Home page and how it works</li>
+          <li>The four-line sample</li>
+          <li>Refund and privacy pages</li>
+        </ul>
+        <p><a class="btn secondary" href="sample.html">Read the sample</a></p>
+      </article>
+      <article class="card">
+        <h3 data-product>The Operator Brief</h3>
+        <p class="price" data-price>$29</p>
+        <p class="fine">One payment. Not a subscription.</p>
+        <ul data-includes></ul>
+        <p><a class="btn" data-pay href="members.html?paid=1">Pay and unlock</a></p>
+        <p class="notice" data-pay-note hidden>Payment link is empty. Open config.js, paste a Stripe Payment Link into stripePaymentLink, and deploy again. Until then the button will not charge anyone.</p>
+        <p class="fine">Refunds for <span data-refund>14</span> days. Email <a data-email href="mailto:hello@example.com"></a>. Stripe handles the card. We never see the card number.</p>
+      </article>
+    </section>
+    <section class="section">
+      <h2>What happens when you pay</h2>
+      <ol>
+        <li>You leave this site for Stripe’s payment page.</li>
+        <li>Stripe emails you a receipt.</li>
+        <li>Stripe sends you back to the members page.</li>
+        <li>If you want a refund, email us inside the window. We do not argue.</li>
+      </ol>
+    </section>
+    <footer>
+      <span><span data-brand>Northline</span></span>
+      <span><a href="refunds.html">Refunds</a> · <a href="privacy.html">Privacy</a></span>
+    </footer>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
