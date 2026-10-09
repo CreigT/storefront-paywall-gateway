@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northline</title>
+  <meta name="description" content="A simple shop with a clear price. Read the free sample. Pay only if you want the rest.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="index.html"><svg class="mark" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="6" fill="#e7e1d4"/><rect x="10" y="8" width="16" height="3" fill="#1c2822"/><path d="M8 28 V16 a10 10 0 0 1 20 0 V28 Z" fill="none" stroke="#1c2822" stroke-width="3"/></svg><span data-brand>Northline</span></a>
+      <nav class="nav-links">
+        <a href="how.html">How it works</a>
+        <a href="pricing.html">Price</a>
+        <a href="sample.html">Free sample</a>
+        <a class="btn" href="pricing.html">See the price</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div>
+        <p class="kicker">One product. One price.</p>
+        <h1 data-product>The Operator Brief</h1>
+        <p class="lede" data-summary></p>
+        <p data-tagline></p>
+        <div class="actions">
+          <a class="btn" href="pricing.html">See what <span data-price>$29</span> includes</a>
+          <a class="btn secondary" href="sample.html">Read the free sample</a>
+        </div>
+        <p class="fine">No account to browse. Price is on the next page. Refund window: <span data-refund>14</span> days.</p>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Quiet paper desk"></div>
+    </section>
+    <section class="section">
+      <div class="grid-3">
+        <article class="card"><h3>Look first</h3><p>The sample page is free. You can read the method before you pay anything.</p></article>
+        <article class="card"><h3>Pay one price</h3><p>No trial that turns into a subscription. The number on the price page is the number you pay.</p></article>
+        <article class="card"><h3>Keep the receipt</h3><p>Email <a data-email href="mailto:hello@example.com">hello@example.com</a> for a refund inside <span data-refund>14</span> days. A person answers.</p></article>
+      </div>
+    </section>
+    <section class="section">
+      <h2>What you are buying</h2>
+      <p class="lede">A short brief, not a course. Written so you can use it the same week.</p>
+      <div class="card"><ul data-includes></ul></div>
+    </section>
+    <footer>
+      <span><span data-brand>Northline</span> · owned by <span data-owner>Your Name</span></span>
+      <span><a href="refunds.html">Refunds</a> · <a href="privacy.html">Privacy</a> · <a data-email href="mailto:hello@example.com">Email</a></span>
+    </footer>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
